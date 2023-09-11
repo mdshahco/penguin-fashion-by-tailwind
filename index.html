@@ -4,17 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
+    <!-- fontawesome kit  -->
+    <script src="https://kit.fontawesome.com/3cbdc54cfd.js" crossorigin="anonymous"></script>
+    <!-- tailwind css  -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .banner-right{
+            background-image: url("icons/bg1.png");
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body>
-    <header>
-
+    <header class="bg-amber-100 px-72">
+        <!--========================================
+             navbar started
+            ====================================== -->
+        <nav>
+            <div class="navbar flex justify-between items-center py-10">
+                <div class="w-96">
+                    <img src="icons/logo.png" alt="">
+                </div>
+                <div>
+                    <ul class="flex gap-14 justify-evenly font-bold">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="banner flex justify-between items-center py-10">
+            <div class="banner-left">
+                <h1 class="text-6xl font-semibold"><span class="text-amber-400">BE THE PENGUINS</span><br> OF WINTER</h1>
+                <p class="my-8 font-semibold text-xl font-sans text-slate-600">Lorem Ipsum is simply dummy text of the printing <br> and typesetting industry.</p>
+                <button class="btn text-white bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-4 px-8 rounded-lg">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>BUY NOW</span>
+                </button>
+            </div>
+            <div class="banner-right">
+                <img src="images/model.png" alt="">
+            </div>
+        </div>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
